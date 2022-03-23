@@ -97,6 +97,11 @@ class UI{
         const app = document.querySelector("#App");
 
         //Insertar mensaje en el interfaz de usuario
+        
+        //Remover el mensaje luego de tres segundos
+        setTimeout(function(){
+            document.querySelector(".alert").remove();
+        }, 3000);
 
         
     }
