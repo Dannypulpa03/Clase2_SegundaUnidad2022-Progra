@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase número 2</title>
+
+    <link rel="stylesheet" href="style.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+       <a class="navbar-brand" href="#" style="margin-left: 25px;">PRODUCTOS</a> 
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#" style="margin-left: 25px;">Productos App</a> 
+     </nav>
+    
+     <div class="contenedor">
+        <div class="columna medida_columna">
+            <div class="medida-1">
+                <div class="tarjeta">
+                    <div class="tarjeta-header"> 
+                       <h4 style="text-align: center;">Agregar producto</h4>     
+                    </div>
+                    <form id="producto-formulario" class="tarjeta-body" style="margin-left: 25px;">
+                        <div class="grupo-fomulario">
+                            <input type="text" id="nombre" 
+                            placeholder="Nombre del producto" class="control-formulario">
+                        </div>
+
+                        <div class="grupo-fomulario">
+                            <input type="number" id="precio" step="0.01" 
+                            placeholder="Precio del producto" class="control-formulario">
+                        </div>
+
+
+                        <div class="grupo-fomulario">
+                            <input type="number" id="anio" step="1"
+                            value="2022" class="control-formulario">
+                        </div>
+                        <br>
+                        <input type="submit" value="Guardar" class="btn btn-success">
+
+
+
+                    </form>
+                </div>
+            </div>
+
+            <!--Lista de productos-->
+            <div id="producto-lista" class="medida-3"></div>    
+
+        </div>
+     </div>
+
+     <script src="App.js" type="module"></script>
+</body>
+</html>
